@@ -80,7 +80,7 @@ body {
     content: "";
     z-index: -1;
     top: -6px;
-    left: 0px;
+    left: 0;
     background: #babbbb;
     width: 314px;
     height: 78px;
@@ -92,7 +92,7 @@ body {
     content: "";
     z-index: -1;
     bottom: -5px;
-    left: 0px;
+    left: 0;
     background: #babbbb;
     width: 314px;
     height: 78px;
@@ -123,7 +123,6 @@ body {
     width: 8px;
     height: 10px;
     background: #4196b7;
-    margin-top: 2px;
     position: relative;
     margin-top: 4px;
 }
@@ -194,7 +193,6 @@ body {
     float: left;
 }
 .main-btns li a {
-    width: 30px;
     display: block;
     width: 94px;
     height: 34px;
@@ -221,9 +219,6 @@ body {
     top: -12px;
     left: 5px;
     content: "";
-    -webkit-transform: rotate(70deg);
-    -moz-transform: rotate(70deg);
-    -o-transform: rotate(70deg);
     transform: rotate(70deg);
 }
 .icon.home:before {
@@ -234,9 +229,6 @@ body {
     top: -12px;
     right: 5px;
     content: "";
-    -webkit-transform: rotate(110deg);
-    -moz-transform: rotate(110deg);
-    -o-transform: rotate(110deg);
     transform: rotate(110deg);
 }
 .icon.windows {
@@ -269,7 +261,7 @@ body {
     background: #bbb;
     color: #bbb;
     font-size: 18px;
-    line-height: 0px;
+    line-height: 0;
     text-indent: -16px;
     font-family: sans-serif;
     margin-top: 12px;
