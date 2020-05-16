@@ -1,0 +1,5 @@
+.Scene{
+    margin: auto;
+    border: 6px solid var(--yellow-color);
+    border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+.Poster{
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--yellow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Poster img {
+    min-width: 100%;
+    width: 100%;
+}

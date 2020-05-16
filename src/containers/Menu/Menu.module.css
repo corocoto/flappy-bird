@@ -1,0 +1,51 @@
+.Menu{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.Menu > button[hidden]{
+    display: none;
+}
+.Menu > button{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: block;
+    background-color: var(--yellow-color);
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Links{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+}
+.Links > a{
+    width: 2em;
+    height: 2em;
+    transition: filter .6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.Links > a:not(:last-child){
+    margin-right: 8px;
+}
+
+.License{
+    background-image: url('icons/note.svg');
+}
+
+.Repo{
+    background-image: url('icons/octocat.svg');
+}
