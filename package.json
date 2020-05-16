@@ -10,6 +10,14 @@
     "Game",
     "Flappy-Bird"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreativeRusBear/FlappyBird.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CreativeRusBear/FlappyBird/issues"
+  },
+  "homepage": "https://github.com/CreativeRusBear/FlappyBird#readme",
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",
