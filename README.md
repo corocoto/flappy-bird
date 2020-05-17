@@ -14,19 +14,19 @@ Flappy Bird is PWA application, that was be wrote with using React.js library.
 4. Run `npm install` or `yarn install` for install dependencies;
 5. After that, run `npm run start` or `yarn start`  for running the project.
 
-## Available commands: :receipt:
+## Available commands: 
 - ```npm run start``` or ```yarn start``` - launches and opens the  project in your browser;
 - ```npm run build``` or ```yarn build``` - builds the application;
 
-## License :bookmark_tabs:
+## License 
 
 **Flappy Bird** application is open-sourced software licensed under the MIT License (MIT). Please see [License File](LICENSE) for more information.
 
-## Changelog :notebook_with_decorative_cover::date:
+## Changelog 
 
 Detailed changes for each release are documented in the [release notes](CHANGELOG.md).
 
-## Contributing :octocat:
+## Contributing
 
 I'm thanks all the people, that who contributed or who want to contribute to "Flappy Bird" application.
 
