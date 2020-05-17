@@ -4,7 +4,7 @@
 
 Flappy Bird is PWA application, that was be wrote with using React.js library.
 
-![Application](https://user-images.githubusercontent.com/37180024/82160198-52d17400-989c-11ea-9fc2-5f46f87895fc.gif)
+![Application](https://user-images.githubusercontent.com/37180024/82160962-99759d00-98a1-11ea-865d-1ef0c5f27144.gif)
 
 ## Instructions :clipboard:
 
