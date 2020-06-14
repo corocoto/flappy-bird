@@ -6,6 +6,8 @@ Flappy Bird is PWA application, that was be wrote with using React.js library.
 
 ![Application](https://user-images.githubusercontent.com/37180024/82160962-99759d00-98a1-11ea-865d-1ef0c5f27144.gif)
 
+**P.S. [Link](https://creativerusbear.github.io/flappy-bird/) on the game.**
+
 ## Instructions :clipboard:
 
 1. Download application and unpack it;
