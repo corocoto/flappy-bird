@@ -4,7 +4,7 @@ Pull Requests
 If you're thinking about making some changes, maybe fixing a bug, or adding a
 snazzy new feature, first, thank you. Contributions are very welcome. So below you'll find  **The fastest way to get your pull request merged in.** 
 
-1. **Create a remote to track the base CreativeRusBear/FlappyBird**
+1. **Create a remote to track the base CreativeRusBear/flappy-bird**
    This is just a convenience to make it easier to update your ```<tracking branch>``` (more on that shortly).  You would execute something like:
 
         git remote add base https://github.com/CreativeRusBear/flappy-bird.git
