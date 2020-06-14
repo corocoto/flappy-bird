@@ -7,7 +7,7 @@ snazzy new feature, first, thank you. Contributions are very welcome. So below y
 1. **Create a remote to track the base CreativeRusBear/FlappyBird**
    This is just a convenience to make it easier to update your ```<tracking branch>``` (more on that shortly).  You would execute something like:
 
-        git remote add base https://github.com/CreativeRusBear/FlappyBird.git
+        git remote add base https://github.com/CreativeRusBear/flappy-bird.git
 
    Here 'base' is the name of the remote.  Feel free to use whatever you want.
 
