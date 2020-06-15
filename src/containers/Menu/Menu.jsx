@@ -14,7 +14,7 @@ const Menu = (props) => {
         <div className={classes.Menu}>
             <button
                 onClick={() => props.history.goBack()}
-                hidden={props.history.location.pathname === '/'}
+                hidden={props.history.location.pathname === '/' || props.history.location.pathname === '/flappy-bird' || props.history.location.pathname === '/flappy-bird/' }
             >Back</button>
             <Switch>
                 <Route path='/game' component={asyncSceneLoad}/>
