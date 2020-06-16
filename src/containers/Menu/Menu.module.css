@@ -1,20 +1,18 @@
 .Menu{
-    position: relative;
+    box-sizing: border-box;
+    padding: 8px 8px 8px 0;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 50vw;
-    height: 100vh;
+    flex-grow: 1;
 }
 
 .Menu > button[hidden]{
-    display: none;
+    visibility: hidden;
 }
 .Menu > button{
-    position: absolute;
-    right: 16px;
-    top: 16px;
+    margin-left: auto;
     display: block;
     background-color: var(--yellow-color);
     font-size: 18px;
@@ -23,15 +21,13 @@
     padding: 16px;
     box-sizing: border-box;
     cursor: pointer;
-    z-index: 1;
 }
 
 .Links{
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
     display: flex;
+    margin-left: auto;
 }
+
 .Links > a{
     width: 2em;
     height: 2em;
