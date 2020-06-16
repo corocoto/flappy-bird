@@ -1,1 +1,0 @@
-{"version":3,"sources":["Scene.module.css"],"names":[],"mappings":"AAAA,oBACI,WAAY,CACZ,oCAAqC,CACrC,iBACJ","file":"3.665f35cb.chunk.css","sourcesContent":[".Scene{\r\n    margin: auto;\r\n    border: 6px solid var(--yellow-color);\r\n    border-radius: 4px;\r\n}"]}

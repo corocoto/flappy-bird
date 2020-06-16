@@ -1,2 +1,0 @@
-(this["webpackJsonpflappy-bird"]=this["webpackJsonpflappy-bird"]||[]).push([[5],{46:function(t,e,a){t.exports={List:"List_List__1g0ug"}},49:function(t,e,a){"use strict";a.r(e);var n=a(0),r=a.n(n),l=a(9),s=a(46),u=a.n(s);e.default=function(t){return r.a.createElement("div",{className:u.a.List},r.a.createElement("button",null,r.a.createElement(l.b,{to:"/game"},"Play")),r.a.createElement("button",null,r.a.createElement(l.b,{to:"/author"},"Author")))}}}]);
-//# sourceMappingURL=5.3dffcf82.chunk.js.map
