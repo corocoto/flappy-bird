@@ -35,6 +35,7 @@ export default class Scene extends Component {
             this.initSceneSounds();
             this.startAnimationLoop();
             window.addEventListener('keydown', this.keyDownPressHandler);
+            this.canvasRef.current.addEventListener('touchstart', this.keyDownPressHandler);
         });
     }
 
@@ -146,6 +147,7 @@ export default class Scene extends Component {
 
     removeEventListeners(){
         window.removeEventListener('keydown', this.keyDownPressHandler);
+        this.canvasRef.current.removeEventListener('touchstart', this.keyDownPressHandler);
         window.cancelAnimationFrame(this.requestID);
     }
 
