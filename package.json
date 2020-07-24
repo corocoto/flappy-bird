@@ -2,7 +2,7 @@
   "name": "flappy-bird",
   "version": "1.1.0",
   "license": "MIT",
-  "author": "Artem Gusev (CreativeRusBear) <gusev2014russia@mail.ru>",
+  "author": "Artem Gusev (corocoto) <gusev2014russia@mail.ru>",
   "keywords": [
     "JavaScript",
     "React",
@@ -12,12 +12,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CreativeRusBear/FlappyBird.git"
+    "url": "git+https://github.com/corocoto/FlappyBird.git"
   },
   "bugs": {
-    "url": "https://github.com/CreativeRusBear/FlappyBird/issues"
+    "url": "https://github.com/corocoto/FlappyBird/issues"
   },
-  "homepage": "https://creativerusbear.github.io/flappy-bird",
+  "homepage": "https://corocoto.github.io/flappy-bird",
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",
