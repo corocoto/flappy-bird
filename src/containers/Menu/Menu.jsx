@@ -40,5 +40,5 @@ const Menu = (props) => {
         </div>
     )
 }
-
+export {Menu};
 export default withRouter(Menu);
