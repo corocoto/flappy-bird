@@ -20,7 +20,7 @@ describe('<Menu>', () => {
     beforeEach(() => wrapper = shallow(<Menu {...props}/>));
     describe('testing Back <button>', () => {
         it('should hidden if open in the main page', () => expect(wrapper.find('button').prop('hidden')).toEqual(true));
-        it('shouldn\'t be hidden if open in author page', () => {
+        it('shouldn\'t be hidden if open the author page', () => {
             wrapper.setProps({
                 history: {
                     goBack: jest.fn(),
@@ -31,7 +31,7 @@ describe('<Menu>', () => {
             });
             expect(wrapper.find('button').prop('hidden')).toEqual(false);
         });
-        it('should has event listener for click', ()=> {
+        it('should has event listener that running goBack prop function when click on button', ()=> {
             expect(wrapper.find('button').prop('onClick')()).toEqual(props.history.goBack());
         })
     })
