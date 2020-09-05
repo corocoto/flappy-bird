@@ -28,14 +28,14 @@ const Menu = (props) => {
                     className={classes.License}
                     rel='noopener noreferrer license'
                     title='Link on the licence'
-                ></a>
+                > </a>
                 <a
                     href='https://github.com/CreativeRusBear/FlappyBird'
                     target='_blank'
                     className={classes.Repo}
                     rel='noopener noreferrer bookmark'
                     title='Link on the repository'
-                ></a>
+                > </a>
             </div>
         </div>
     )

@@ -110,8 +110,8 @@ export default class Scene extends Component {
             }
 
             /* Bit about pipes */
-            if (this.bX + this.bird.width >= this.pipe[i].x && this.bX <= this.pipe[i].x + this.pipeNorth.width &&
-                (this.bY <= this.pipe[i].y + this.pipeNorth.height || this.bY + this.bird.height >= this.pipe[i].y + constant)
+            if ((this.bX + this.bird.width >= this.pipe[i].x && this.bX <= this.pipe[i].x + this.pipeNorth.width &&
+                (this.bY <= this.pipe[i].y + this.pipeNorth.height || this.bY + this.bird.height >= this.pipe[i].y + constant))
                 || this.bY + this.bird.height >= this.canvasRef.current.height - this.fg.height) {
                 window.cancelAnimationFrame(this.requestID);
                 this.setStarterVals();

@@ -5,11 +5,11 @@ const About = (props) => {
         <div className={classes.About}>
             <h1>Author</h1>
             <p>This game was created by <a
-                href='https://github.com/CreativeRusBear'
+                href='https://github.com/corocoto'
                 target='_blank'
                 rel='noopener noreferrer author'
             >
-                CreativeRusBear (Artem Gusev)
+                corocoto (Artem Gusev)
             </a>
             </p>
         </div>
