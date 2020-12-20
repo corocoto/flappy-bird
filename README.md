@@ -1,5 +1,7 @@
 # :bird: Flappy Bird
 
+[![Tests CI](https://github.com/corocoto/flappy-bird/workflows/Test/badge.svg)](https://github.com/corocoto/flappy-bird/actions)
+
 ## Introduction
 
 Flappy Bird is PWA application, that was be wrote with using React.js library.
