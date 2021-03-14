@@ -4,8 +4,16 @@ import {Route, Switch} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import List from './List/List';
 
-const Scene = React.lazy(() => import('./Scene/Scene'));
-const About = React.lazy(() => import('./About/About'));
+const Scene = React.lazy(() => 
+    import(
+        /* webpackChunkName: "SceneComponent" */ './Scene/Scene'
+    )
+);
+const About = React.lazy(() => 
+    import(
+        /* webpackChunkName: "AboutComponent" */ './About/About'
+    )
+);
 
 
 const Menu = (props) => {
