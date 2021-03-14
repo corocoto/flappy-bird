@@ -1,0 +1,2 @@
+(this["webpackJsonpflappy-bird"]=this["webpackJsonpflappy-bird"]||[]).push([[0],{28:function(e,t,r){"use strict";r.r(t);var a=r(0),o=r.n(a),n="About_About__3iwlA";t.default=function(e){return o.a.createElement("div",{className:n},o.a.createElement("h1",null,"Author"),o.a.createElement("p",null,"This game was created by ",o.a.createElement("a",{href:"https://github.com/corocoto",target:"_blank",rel:"noopener noreferrer author"},"corocoto (Artem Gusev)")))}}}]);
+//# sourceMappingURL=AboutComponent.5d233b3a.chunk.js.map
