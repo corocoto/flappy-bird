@@ -4,12 +4,12 @@ import {Route, Switch} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import List from './List/List';
 
-const Scene = React.lazy(() => 
+const Scene = React.lazy(() =>
     import(
         /* webpackChunkName: "SceneComponent" */ './Scene/Scene'
     )
 );
-const About = React.lazy(() => 
+const About = React.lazy(() =>
     import(
         /* webpackChunkName: "AboutComponent" */ './About/About'
     )
@@ -23,26 +23,30 @@ const Menu = (props) => {
         <Route path='/' component={List}/>
     </Switch>);
 
+    const handleBackButtonClick = () => props.history.goBack();
+
+    const isBackButtonHidden = ['/', '/flappy-bird', '/flappy-bird/'].includes(props.history.location.pathname);
+
+    const fallbackNode = <p>Loading...</p>;
+
     return (
         <div className={classes.Menu}>
             <button
-                onClick={() => props.history.goBack()}
-                hidden={props.history.location.pathname === '/' ||
-                props.history.location.pathname === '/flappy-bird' ||
-                props.history.location.pathname === '/flappy-bird/'}
+                onClick={handleBackButtonClick}
+                hidden={isBackButtonHidden}
             >Back
             </button>
-            <Suspense fallback={<p>Loading...</p>}>{routes}</Suspense>
+            <Suspense fallback={fallbackNode}>{routes}</Suspense>
             <div className={classes.Links}>
                 <a
-                    href='https://github.com/CreativeRusBear/FlappyBird/blob/master/LICENSE'
+                    href='https://github.com/corocoto/flappy-bird/blob/master/LICENSE'
                     target='_blank'
                     className={classes.License}
                     rel='noopener noreferrer license'
                     title='Link on the licence'
                 > </a>
                 <a
-                    href='https://github.com/CreativeRusBear/FlappyBird'
+                    href='https://github.com/corocoto/flappy-bird'
                     target='_blank'
                     className={classes.Repo}
                     rel='noopener noreferrer bookmark'
