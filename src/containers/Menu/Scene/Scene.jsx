@@ -158,7 +158,7 @@ export default class Scene extends Component {
                 ref={this.canvasRef}
                 width='288'
                 height='512'
-            ></canvas>
+            />
         )
     }
 }
