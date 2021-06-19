@@ -1,12 +1,8 @@
-.About{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+.About {
     color: var(--dark-brown-color);
 }
 
-.About a{
+.About a {
     color: var(--yellow-color);
     font-weight: 700;
 }

@@ -20,16 +20,16 @@ const About = React.lazy(() =>
 );
 
 
-const Menu = (props) => {
+const Menu = ({history}) => {
     const routes = (<Switch>
         <Route path='/game' component={Scene}/>
         <Route path='/author' component={About}/>
         <Route path='/' component={List}/>
     </Switch>);
 
-    const handleBackButtonClick = () => props.history.goBack();
+    const handleBackButtonClick = () => history.goBack();
 
-    const isBackButtonHidden = ['/', '/flappy-bird', '/flappy-bird/'].includes(props.history.location.pathname);
+    const isBackButtonHidden = ['/', '/flappy-bird', '/flappy-bird/'].includes(history.location.pathname);
 
     const fallbackNode = <p>Loading...</p>;
 

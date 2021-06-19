@@ -4,6 +4,7 @@
   height: 100vh;
   display: flex;
   flex-flow: column;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px){

@@ -1,4 +1,4 @@
-:root{
+:root {
   --yellow-color: hsl(45, 99%, 64%);
   --white-color: hsl(100, 100%, 100%);
   --dark-brown-color: hsl(25, 59%, 32%);
@@ -19,13 +19,13 @@ code {
     monospace;
 }
 
-a{
+a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 
 button:active,
-button:focus{
+button:focus {
   outline: none;
 }
 

@@ -1,44 +1,42 @@
 .Menu{
-    box-sizing: border-box;
-    padding: 8px 8px 8px 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
+  box-sizing: border-box;
+  padding: 8px 8px 8px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .Menu > button[hidden]{
-    visibility: hidden;
+  visibility: hidden;
 }
-.Menu > button{
-    margin-left: auto;
-    display: block;
-    background-color: var(--yellow-color);
-    font-size: 18px;
-    border: none;
-    border-radius: 4px;
-    padding: 16px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.Links{
-    display: flex;
-    margin-left: auto;
+.Menu > button {
+  margin-left: auto;
+  display: block;
+  background-color: var(--yellow-color);
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-.Links > a{
+.Links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.Links > a {
     width: 2em;
     height: 2em;
     transition: filter .6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-.Links > a:not(:last-child){
-    margin-right: 8px;
-}
-
-.License{
+.License {
     background-image: url('icons/note.svg');
 }
 
