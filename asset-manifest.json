@@ -4,17 +4,17 @@
     "AboutComponent.js": "/flappy-bird/static/js/AboutComponent.5d233b3a.chunk.js",
     "AboutComponent.js.map": "/flappy-bird/static/js/AboutComponent.5d233b3a.chunk.js.map",
     "SceneComponent.css": "/flappy-bird/static/css/SceneComponent.22ed1280.chunk.css",
-    "SceneComponent.js": "/flappy-bird/static/js/SceneComponent.f3443744.chunk.js",
-    "SceneComponent.js.map": "/flappy-bird/static/js/SceneComponent.f3443744.chunk.js.map",
+    "SceneComponent.js": "/flappy-bird/static/js/SceneComponent.247d5359.chunk.js",
+    "SceneComponent.js.map": "/flappy-bird/static/js/SceneComponent.247d5359.chunk.js.map",
     "main.css": "/flappy-bird/static/css/main.74e84402.chunk.css",
-    "main.js": "/flappy-bird/static/js/main.a2973677.chunk.js",
-    "main.js.map": "/flappy-bird/static/js/main.a2973677.chunk.js.map",
-    "runtime-main.js": "/flappy-bird/static/js/runtime-main.95e68ed8.js",
-    "runtime-main.js.map": "/flappy-bird/static/js/runtime-main.95e68ed8.js.map",
+    "main.js": "/flappy-bird/static/js/main.8c8bb38e.chunk.js",
+    "main.js.map": "/flappy-bird/static/js/main.8c8bb38e.chunk.js.map",
+    "runtime-main.js": "/flappy-bird/static/js/runtime-main.b6a6faa4.js",
+    "runtime-main.js.map": "/flappy-bird/static/js/runtime-main.b6a6faa4.js.map",
     "static/js/4.6a582004.chunk.js": "/flappy-bird/static/js/4.6a582004.chunk.js",
     "static/js/4.6a582004.chunk.js.map": "/flappy-bird/static/js/4.6a582004.chunk.js.map",
     "index.html": "/flappy-bird/index.html",
-    "precache-manifest.735d66865775e1fa97c1a792be4960a4.js": "/flappy-bird/precache-manifest.735d66865775e1fa97c1a792be4960a4.js",
+    "precache-manifest.3f550ce60e66067c68ce80ecd712bbbd.js": "/flappy-bird/precache-manifest.3f550ce60e66067c68ce80ecd712bbbd.js",
     "service-worker.js": "/flappy-bird/service-worker.js",
     "static/css/AboutComponent.f50e0704.chunk.css.map": "/flappy-bird/static/css/AboutComponent.f50e0704.chunk.css.map",
     "static/css/SceneComponent.22ed1280.chunk.css.map": "/flappy-bird/static/css/SceneComponent.22ed1280.chunk.css.map",
@@ -32,9 +32,9 @@
     "static/media/score.92d4be02.mp3": "/flappy-bird/static/media/score.92d4be02.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.95e68ed8.js",
+    "static/js/runtime-main.b6a6faa4.js",
     "static/js/4.6a582004.chunk.js",
     "static/css/main.74e84402.chunk.css",
-    "static/js/main.a2973677.chunk.js"
+    "static/js/main.8c8bb38e.chunk.js"
   ]
 }
