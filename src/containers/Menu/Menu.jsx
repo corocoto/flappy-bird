@@ -6,12 +6,16 @@ import List from './List/List';
 
 const Scene = React.lazy(() =>
     import(
-        /* webpackChunkName: "SceneComponent" */ './Scene/Scene'
+        /* webpackChunkName: "SceneComponent" */
+        /* webpackPreload: true */
+      './Scene/Scene'
     )
 );
 const About = React.lazy(() =>
     import(
-        /* webpackChunkName: "AboutComponent" */ './About/About'
+        /* webpackChunkName: "AboutComponent" */
+        /* webpackPrefetch: true */
+      './About/About'
     )
 );
 
