@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import classes from './List.module.css';
 
-const List = (props) => (
+const List = () => (
     <div className={classes.List}>
         <button>
             <NavLink to='/game'>Play</NavLink>

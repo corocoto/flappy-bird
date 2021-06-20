@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2020"
+    ],
+    "allowJs": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+  },
+  "include": [
+    "src",
+    "index.d.ts"
+  ],
+}

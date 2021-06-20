@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import './App.css';
-import Menu from './containers/Menu/Menu';
-import Poster from './components/Poster/Poster';
+import Menu from './containers/Menu';
+import Poster from './components/Poster';
 
 function App() {
   return (
