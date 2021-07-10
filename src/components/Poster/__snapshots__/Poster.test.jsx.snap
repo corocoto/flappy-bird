@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Poster component renders correctly 1`] = `
+<div
+  className="Poster"
+>
+  <img
+    alt="Logo"
+    loading="lazy"
+    src="logo.png"
+  />
+</div>
+`;
