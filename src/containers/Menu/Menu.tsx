@@ -9,14 +9,14 @@ const Scene = React.lazy(() =>
     import(
         /* webpackChunkName: "SceneComponent" */
         /* webpackPreload: true */
-      './Scene/Scene'
+      './Scene'
     )
 );
 const About = React.lazy(() =>
     import(
         /* webpackChunkName: "AboutComponent" */
         /* webpackPrefetch: true */
-      './About/About'
+      './About'
     )
 );
 
