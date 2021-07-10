@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import renderer from "react-test-renderer";
 
-import {configure, shallow} from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import {configure, shallow} from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
-import {Menu} from './Menu';
+import {Menu} from "./Menu";
 
 configure({adapter: new Adapter()});
 
@@ -18,7 +19,15 @@ describe('<Menu>', () => {
     }
     let wrapper;
     beforeEach(() => wrapper = shallow(<Menu {...props}/>));
-    describe('testing Back <button>', () => {
+
+  it('should renders correctly',  () => {
+    const tree = renderer
+      .create(shallow)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  describe('testing Back <button>', () => {
         it('should hidden if open in the main page', () => expect(wrapper.find('button').prop('hidden')).toEqual(true));
         it('shouldn\'t be hidden if open the author page', () => {
             wrapper.setProps({
