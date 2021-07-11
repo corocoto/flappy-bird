@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu> should renders correctly 1`] = `
+<div
+  className="Menu"
+>
+  <button
+    hidden={true}
+    onClick={[Function]}
+  >
+    Back
+  </button>
+  <div
+    className="List"
+  >
+    <button>
+      <a
+        aria-current={null}
+        href="/game"
+        onClick={[Function]}
+      >
+        Play
+      </a>
+    </button>
+    <button>
+      <a
+        aria-current={null}
+        href="/author"
+        onClick={[Function]}
+      >
+        Author
+      </a>
+    </button>
+  </div>
+  <div
+    className="Links"
+  >
+    <a
+      className="License"
+      href="https://github.com/corocoto/flappy-bird/blob/master/LICENSE"
+      rel="noopener noreferrer license"
+      target="_blank"
+      title="Link on the licence"
+    />
+    <a
+      className="Repo"
+      href="https://github.com/corocoto/flappy-bird"
+      rel="noopener noreferrer bookmark"
+      target="_blank"
+      title="Link on the repository"
+    />
+  </div>
+</div>
+`;

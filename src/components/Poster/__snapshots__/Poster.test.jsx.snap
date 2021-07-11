@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Poster component renders correctly 1`] = `
+exports[`<Poster /> should renders correctly 1`] = `
 <div
   className="Poster"
 >

@@ -1,13 +1,12 @@
 import React from "react";
+import About from "./About";
 import renderer from "react-test-renderer";
-import App from "./App";
 
-describe('<App />', () => {
+describe('<About />', () => {
   it('should renders correctly', () => {
     const tree = renderer
-      .create(<App/>)
+      .create(<About />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
-

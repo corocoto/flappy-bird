@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> should renders correctly 1`] = `
+<div
+  className="About"
+>
+  <h1>
+    Author
+  </h1>
+  <p>
+    This game was created by 
+    <a
+      href="https://github.com/corocoto"
+      rel="noopener noreferrer author"
+      target="_blank"
+    >
+      corocoto (Artem Gusev)
+    </a>
+  </p>
+</div>
+`;
