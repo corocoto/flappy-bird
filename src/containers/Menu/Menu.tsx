@@ -50,14 +50,14 @@ const Menu: MenuType = ({history}) => {
           className={classes.License}
           rel='noopener noreferrer license'
           title='Link on the licence'
-        />
+        > </a>
         <a
           href='https://github.com/corocoto/flappy-bird'
           target='_blank'
           className={classes.Repo}
           rel='noopener noreferrer bookmark'
           title='Link on the repository'
-        />
+        > </a>
       </div>
     </div>
   )

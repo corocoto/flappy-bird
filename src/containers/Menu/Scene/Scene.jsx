@@ -116,6 +116,7 @@ export default class Scene extends Component {
         window.cancelAnimationFrame(this.requestID);
         this.setStarterVals();
         this.startAnimationLoop();
+        // eslint-disable-next-line no-throw-literal
         throw 'End of the game';
       }
 
