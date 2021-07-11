@@ -41,14 +41,18 @@ exports[`<Menu> should renders correctly 1`] = `
       rel="noopener noreferrer license"
       target="_blank"
       title="Link on the licence"
-    />
+    >
+       
+    </a>
     <a
       className="Repo"
       href="https://github.com/corocoto/flappy-bird"
       rel="noopener noreferrer bookmark"
       target="_blank"
       title="Link on the repository"
-    />
+    >
+       
+    </a>
   </div>
 </div>
 `;
