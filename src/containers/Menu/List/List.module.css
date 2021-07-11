@@ -5,19 +5,18 @@
 }
 
 .List button {
-    background-color: var(--yellow-color);
-    border-radius: 4px;
-    width: 240px;
-    text-align: center;
-    border: none;
-    padding: 0;
+  background-color: var(--yellow-color);
+  border-radius: 4px;
+  width: 240px;
+  text-align: center;
+  border: none;
+  padding: 0;
 }
 
 
-
 .List button a {
-    color: var(--white-color);
-    font-size: 18px;
-    padding: 12px 0;
-    width: 100%;
+  color: var(--white-color);
+  font-size: 18px;
+  padding: 12px 0;
+  width: 100%;
 }

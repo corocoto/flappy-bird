@@ -6,12 +6,12 @@ import Poster from './components/Poster';
 
 function App() {
   return (
-      <BrowserRouter>
-        <div className="App">
-            <Poster/>
-            <Menu/>
-        </div>
-      </BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
+        <Poster/>
+        <Menu/>
+      </div>
+    </BrowserRouter>
   );
 }
 

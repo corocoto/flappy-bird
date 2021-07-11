@@ -1,8 +1,8 @@
 .About {
-    color: var(--dark-brown-color);
+  color: var(--dark-brown-color);
 }
 
 .About a {
-    color: var(--yellow-color);
-    font-weight: 700;
+  color: var(--yellow-color);
+  font-weight: 700;
 }

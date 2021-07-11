@@ -1,6 +1,6 @@
 import React, {useRef, useEffect, useLayoutEffect, FC, useState} from 'react';
 import classes from './Scene.module.css';
-import { isTouchDevice } from '../../../helpers';
+import {isTouchDevice} from '../../../helpers';
 
 /* Images importing */
 import Background from '../../../assets/images/bg.png';

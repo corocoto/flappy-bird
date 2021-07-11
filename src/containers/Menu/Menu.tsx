@@ -6,61 +6,61 @@ import List from './List';
 import {MenuType} from './Menu.types';
 
 const Scene = React.lazy(() =>
-    import(
-        /* webpackChunkName: "SceneComponent" */
-        /* webpackPreload: true */
-      './Scene'
+  import(
+    /* webpackChunkName: "SceneComponent" */
+    /* webpackPreload: true */
+    './Scene'
     )
 );
 const About = React.lazy(() =>
-    import(
-        /* webpackChunkName: "AboutComponent" */
-        /* webpackPrefetch: true */
-      './About'
+  import(
+    /* webpackChunkName: "AboutComponent" */
+    /* webpackPrefetch: true */
+    './About'
     )
 );
 
 
 const Menu: MenuType = ({history}) => {
-    const routes = (<Switch>
-        <Route path='/game' component={Scene}/>
-        <Route path='/author' component={About}/>
-        <Route path='/' component={List}/>
-    </Switch>);
+  const routes = (<Switch>
+    <Route path='/game' component={Scene}/>
+    <Route path='/author' component={About}/>
+    <Route path='/' component={List}/>
+  </Switch>);
 
-    const handleBackButtonClick = (): void => history.goBack();
+  const handleBackButtonClick = (): void => history.goBack();
 
-    const isBackButtonHidden = ['/', '/flappy-bird', '/flappy-bird/'].includes(history.location.pathname);
+  const isBackButtonHidden = ['/', '/flappy-bird', '/flappy-bird/'].includes(history.location.pathname);
 
-    const fallbackNode = <p>Loading...</p>;
+  const fallbackNode = <p>Loading...</p>;
 
-    return (
-        <div className={classes.Menu}>
-            <button
-                onClick={handleBackButtonClick}
-                hidden={isBackButtonHidden}
-            >
-              Back
-            </button>
-            <Suspense fallback={fallbackNode}>{routes}</Suspense>
-            <div className={classes.Links}>
-                <a
-                    href='https://github.com/corocoto/flappy-bird/blob/master/LICENSE'
-                    target='_blank'
-                    className={classes.License}
-                    rel='noopener noreferrer license'
-                    title='Link on the licence'
-                />
-                <a
-                    href='https://github.com/corocoto/flappy-bird'
-                    target='_blank'
-                    className={classes.Repo}
-                    rel='noopener noreferrer bookmark'
-                    title='Link on the repository'
-                />
-            </div>
-        </div>
-    )
+  return (
+    <div className={classes.Menu}>
+      <button
+        onClick={handleBackButtonClick}
+        hidden={isBackButtonHidden}
+      >
+        Back
+      </button>
+      <Suspense fallback={fallbackNode}>{routes}</Suspense>
+      <div className={classes.Links}>
+        <a
+          href='https://github.com/corocoto/flappy-bird/blob/master/LICENSE'
+          target='_blank'
+          className={classes.License}
+          rel='noopener noreferrer license'
+          title='Link on the licence'
+        />
+        <a
+          href='https://github.com/corocoto/flappy-bird'
+          target='_blank'
+          className={classes.Repo}
+          rel='noopener noreferrer bookmark'
+          title='Link on the repository'
+        />
+      </div>
+    </div>
+  )
 }
 export {Menu};
 export default withRouter(Menu);

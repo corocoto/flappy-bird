@@ -1,24 +1,24 @@
-.Poster{
-    width: 100%;
-    height: 64px;
-    background-color: var(--yellow-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Poster {
+  width: 100%;
+  height: 64px;
+  background-color: var(--yellow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Poster img {
-    height: 100%;
+  height: 100%;
 }
 
-@media screen and (min-width: 768px){
-    .Poster {
-        width: 50vw;
-        height: 100vh;
-    }
+@media screen and (min-width: 768px) {
+  .Poster {
+    width: 50vw;
+    height: 100vh;
+  }
 
-    .Poster img {
-        width: 100%;
-        height: auto;
-    }
+  .Poster img {
+    width: 100%;
+    height: auto;
+  }
 }

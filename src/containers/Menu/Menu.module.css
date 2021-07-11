@@ -1,4 +1,4 @@
-.Menu{
+.Menu {
   box-sizing: border-box;
   padding: 8px 8px 8px 0;
   display: flex;
@@ -8,9 +8,10 @@
   flex-grow: 1;
 }
 
-.Menu > button[hidden]{
+.Menu > button[hidden] {
   visibility: hidden;
 }
+
 .Menu > button {
   margin-left: auto;
   display: block;
@@ -31,15 +32,15 @@
 }
 
 .Links > a {
-    width: 2em;
-    height: 2em;
-    transition: filter .6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  width: 2em;
+  height: 2em;
+  transition: filter .6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 .License {
-    background-image: url('icons/note.svg');
+  background-image: url('icons/note.svg');
 }
 
-.Repo{
-    background-image: url('icons/octocat.svg');
+.Repo {
+  background-image: url('icons/octocat.svg');
 }

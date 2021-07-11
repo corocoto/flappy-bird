@@ -1,17 +1,17 @@
 .Scene {
-    border: 6px solid var(--yellow-color);
-    border-radius: 4px;
-    height: 60vh;
+  border: 6px solid var(--yellow-color);
+  border-radius: 4px;
+  height: 60vh;
 }
 
 @media screen and (min-height: 667px) {
-    .Scene {
-        height: 64vh;
-    }
+  .Scene {
+    height: 64vh;
+  }
 }
 
 @media (min-height: 731px) {
-    .Scene {
-        height: fit-content;
-    }
+  .Scene {
+    height: fit-content;
+  }
 }

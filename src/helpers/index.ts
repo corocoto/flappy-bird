@@ -1,1 +1,1 @@
-export { isTouchDevice } from './isTouchDevice';
+export {isTouchDevice} from './isTouchDevice';
