@@ -1,6 +1,7 @@
 # :bird: Flappy Bird
 
-[![Tests CI](https://github.com/corocoto/flappy-bird/workflows/Test/badge.svg)](https://github.com/corocoto/flappy-bird/actions)
+[![Test CI](https://github.com/corocoto/flappy-bird/workflows/test/badge.svg)](https://github.com/corocoto/flappy-bird/actions)
+[![eslint-check CI](https://github.com/corocoto/flappy-bird/workflows/eslint-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions)
 
 ## Introduction
 
