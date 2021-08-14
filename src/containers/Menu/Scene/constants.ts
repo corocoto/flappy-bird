@@ -2,8 +2,8 @@ import {CoordinatesType} from './Scene.types';
 import Background from "../../../assets/images/bg.png";
 import Bird from "../../../assets/images/bird.png";
 import Ground from "../../../assets/images/fg.png";
-import PipeNorth from "../../../assets/images/pipeNorth.png";
-import PipeSouth from "../../../assets/images/pipeSouth.png";
+import TopPipe from "../../../assets/images/pipeNorth.png";
+import BottomPipe from "../../../assets/images/pipeSouth.png";
 // @ts-ignore
 import FlySound from "../../../assets/sounds/fly.mp3";
 // @ts-ignore
@@ -25,7 +25,8 @@ export const BIRD: { position: CoordinatesType } = {
   }
 };
 
-export const PIPE_X_STOP_POINT = 125;
+export const PIPE_X_ENDPOINT = 125;
+export const PIPE_X_UPPER_SCORE = 5;
 
 export const sceneImages = new Map([
   [
@@ -41,12 +42,12 @@ export const sceneImages = new Map([
     createImage(Ground)
   ],
   [
-    'pipeNorth',
-    createImage(PipeNorth)
+    'topPipe',
+    createImage(TopPipe)
   ],
   [
-    'pipeSouth',
-    createImage(PipeSouth)
+    'bottomPipe',
+    createImage(BottomPipe)
   ]
 ]);
 
@@ -59,3 +60,9 @@ export const sounds = new Map([
     'score', createAudio(ScoreSound)
   ]
 ]);
+
+export const SCORE_TEXT = {
+  fill: '#000',
+  font: '16px Century Gothic',
+  text: (score: number) => `Score: ${score}`
+}
