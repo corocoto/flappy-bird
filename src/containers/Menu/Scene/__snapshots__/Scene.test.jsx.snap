@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Scene /> should renders correctly 1`] = `
+<canvas
+  className="Scene"
+  height={512}
+  width={288}
+/>
+`;
