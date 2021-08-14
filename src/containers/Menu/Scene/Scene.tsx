@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useCallback} from 'react';
 import classes from './Scene.module.css';
 import _cloneDeep from 'lodash/cloneDeep';
 
@@ -8,8 +8,10 @@ import {
   GAP_VALUE,
   GRAVITATION_VALUE,
   BIRD,
-  PIPE_X_STOP_POINT,
-  CANVAS
+  PIPE_X_ENDPOINT,
+  CANVAS,
+  PIPE_X_UPPER_SCORE,
+  SCORE_TEXT
 } from './constants';
 import {CoordinatesType} from './Scene.types';
 
@@ -18,25 +20,25 @@ const BIRD_COPY = _cloneDeep(BIRD);
 let backgroundImage: HTMLImageElement;
 let birdImage: HTMLImageElement;
 let groundImage: HTMLImageElement;
-let pipeNorthImage: HTMLImageElement;
-let pipeSouthImage: HTMLImageElement;
+let topPipeImage: HTMLImageElement;
+let bottomPipeImage: HTMLImageElement;
 let flySound: HTMLAudioElement;
 let scoreSound: HTMLAudioElement
 
 const Scene = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const canvasContext = useRef<CanvasRenderingContext2D>();
-    let pipesCoordinate = useRef<CoordinatesType[]>([]);
+    const pipesCoordinate = useRef<CoordinatesType[]>([]);
 
-    let score = 0;
-    let requestID: number | undefined;
+    const score = useRef<number>(0);
+    const requestID = useRef<number>(0);
 
     const loadSceneImages = async () => {
       backgroundImage = await sceneImages.get('background') as HTMLImageElement;
       birdImage = await sceneImages.get('bird') as HTMLImageElement;
       groundImage = await sceneImages.get('ground') as HTMLImageElement;
-      pipeNorthImage = await sceneImages.get('pipeNorth') as HTMLImageElement;
-      pipeSouthImage = await sceneImages.get('pipeSouth') as HTMLImageElement;
+      topPipeImage = await sceneImages.get('topPipe') as HTMLImageElement;
+      bottomPipeImage = await sceneImages.get('bottomPipe') as HTMLImageElement;
     };
 
     const loadSceneSounds = () => {
@@ -50,12 +52,12 @@ const Scene = () => {
       }
     };
 
-  const setStarterValues = () => {
+  const setStarterValues = useCallback(() => {
     BIRD_COPY.position = {
       ...BIRD.position
     };
 
-    score = 0;
+    score.current = 0;
 
     pipesCoordinate.current = [
       {
@@ -63,9 +65,9 @@ const Scene = () => {
         y: 0,
       }
     ];
-  }
+  }, []);
 
-  const renderer = () => {
+  const renderer = useCallback(() => {
     if (!canvasContext.current || !canvasRef.current) return;
     canvasContext.current.drawImage(
       backgroundImage,
@@ -73,18 +75,18 @@ const Scene = () => {
       0
     );
     for (let i = 0; i < pipesCoordinate.current.length; i++) {
-      const constant = pipeNorthImage.height + GAP_VALUE;
+      const constant = topPipeImage.height + GAP_VALUE;
 
       /* Draw top pipe */
       canvasContext.current.drawImage(
-        pipeNorthImage,
+        topPipeImage,
         pipesCoordinate.current[i].x,
         pipesCoordinate.current[i].y
       );
 
       /* Draw bottom pipe */
       canvasContext.current.drawImage(
-        pipeSouthImage,
+        bottomPipeImage,
         pipesCoordinate.current[i].x,
         pipesCoordinate.current[i].y + constant
       );
@@ -93,12 +95,12 @@ const Scene = () => {
       pipesCoordinate.current[i].x--;
 
       /* Add new pipes */
-      if (pipesCoordinate.current[i].x === PIPE_X_STOP_POINT) {
+      if (pipesCoordinate.current[i].x === PIPE_X_ENDPOINT) {
         pipesCoordinate.current = [
           ...pipesCoordinate.current,
           {
             x: canvasRef.current.width,
-            y: Math.floor(Math.random() * pipeNorthImage.height) - pipeNorthImage.height,
+            y: Math.floor(Math.random() * topPipeImage.height) - topPipeImage.height,
           }
         ];
       }
@@ -107,26 +109,24 @@ const Scene = () => {
       if (
         (
           BIRD_COPY.position.x + birdImage.width >= pipesCoordinate.current[i].x &&
-          BIRD_COPY.position.x <= pipesCoordinate.current[i].x + pipeNorthImage.width &&
+          BIRD_COPY.position.x <= pipesCoordinate.current[i].x + topPipeImage.width &&
           (
-            BIRD_COPY.position.y <= pipesCoordinate.current[i].y + pipeNorthImage.height ||
+            BIRD_COPY.position.y <= pipesCoordinate.current[i].y + topPipeImage.height ||
             BIRD_COPY.position.y + birdImage.height >= pipesCoordinate.current[i].y + constant
           )
         ) ||
         BIRD_COPY.position.y + birdImage.height >= canvasRef.current.height - groundImage.height
       ) {
-        if (typeof requestID === "number") {
-          window.cancelAnimationFrame(requestID);
-        }
+          window.cancelAnimationFrame(requestID.current);
         setStarterValues();
         renderer();
-      // eslint-disable-next-line no-throw-literal
+        // eslint-disable-next-line no-throw-literal
         throw 'End of the game';
       }
 
       /* Change score */
-      if (pipesCoordinate.current[i].x === 5) {
-        score++;
+      if (pipesCoordinate.current[i].x === PIPE_X_UPPER_SCORE) {
+        score.current++;
         scoreSound.play();
       }
     }
@@ -148,23 +148,21 @@ const Scene = () => {
     BIRD_COPY.position.y += GRAVITATION_VALUE;
 
     /* Draw score */
-    canvasContext.current.fillStyle = '#000';
-    canvasContext.current.font = '16px Century Gothic';
+    canvasContext.current.fillStyle = SCORE_TEXT.fill;
+    canvasContext.current.font = SCORE_TEXT.font;
     canvasContext.current.fillText(
-      `Score: ${score}`,
+      SCORE_TEXT.text(score.current),
       10,
       canvasRef.current.height - 20
     );
-    requestID = window.requestAnimationFrame(renderer);
-  };
+    requestID.current = window.requestAnimationFrame(renderer);
+  }, [setStarterValues]);
 
-  const removeEventListeners = () => {
+  const removeEventListeners = useCallback(() => {
     window.removeEventListener('keydown', keyDownPressHandler);
     canvasRef.current?.removeEventListener('touchstart', keyDownPressHandler);
-    if (typeof requestID === 'number') {
-      window.cancelAnimationFrame(requestID);
-    }
-  };
+      window.cancelAnimationFrame(requestID.current);
+  }, [requestID]);
 
   const keyDownPressHandler = () => {
     BIRD_COPY.position.y -= 30;
