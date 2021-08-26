@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6cdaa0da8e8afe857694ccb108a7b4f7",
+    "revision": "6d10416acdcede0ca793d6f4bb8e6425",
     "url": "/flappy-bird/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flappy-bird/static/css/AboutComponent.5953bbe5.chunk.css"
   },
   {
-    "revision": "fe2fdb82e66b5953d0d8",
+    "revision": "678a714d10995594542d",
     "url": "/flappy-bird/static/css/SceneComponent.dbbeefa5.chunk.css"
   },
   {
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flappy-bird/static/js/AboutComponent.fec3df41.chunk.js"
   },
   {
-    "revision": "fe2fdb82e66b5953d0d8",
-    "url": "/flappy-bird/static/js/SceneComponent.5b06fd61.chunk.js"
+    "revision": "678a714d10995594542d",
+    "url": "/flappy-bird/static/js/SceneComponent.f8212551.chunk.js"
   },
   {
     "revision": "c3072180cf04ca72e09b",
     "url": "/flappy-bird/static/js/main.ad3e026b.chunk.js"
   },
   {
-    "revision": "f31fce6ccfa742be91ff",
-    "url": "/flappy-bird/static/js/runtime-main.7b7484e1.js"
+    "revision": "176db6921c4bfb9dccf5",
+    "url": "/flappy-bird/static/js/runtime-main.6894ce48.js"
   },
   {
     "revision": "f97dc14b469e7aba06579207a33b1946",
