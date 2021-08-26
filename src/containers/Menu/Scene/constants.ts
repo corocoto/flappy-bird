@@ -4,9 +4,7 @@ import Bird from "../../../assets/images/bird.png";
 import Ground from "../../../assets/images/fg.png";
 import TopPipe from "../../../assets/images/pipeNorth.png";
 import BottomPipe from "../../../assets/images/pipeSouth.png";
-// @ts-ignore
 import FlySound from "../../../assets/sounds/fly.mp3";
-// @ts-ignore
 import ScoreSound from "../../../assets/sounds/score.mp3";
 import {createAudio, createImage} from "../../../helpers";
 
