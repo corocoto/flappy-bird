@@ -1,7 +1,8 @@
 # :bird: Flappy Bird
 
-[![Test CI](https://github.com/corocoto/flappy-bird/workflows/test/badge.svg)](https://github.com/corocoto/flappy-bird/actions)
-[![eslint-check CI](https://github.com/corocoto/flappy-bird/workflows/eslint-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions)
+[![Test CI](https://github.com/corocoto/flappy-bird/workflows/test/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/test.yml)
+[![eslint-check CI](https://github.com/corocoto/flappy-bird/workflows/eslint-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/eslint.yml)
+[![editorconfig-check CI](https://github.com/corocoto/flappy-bird/workflows/editorconfig-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/editorconfig.yml)
 
 ## Introduction
 
@@ -29,11 +30,13 @@ Flappy Bird is PWA application, that was be wrote with using React.js library.
 For run project on Docker you're need follow next steps:
 
 1. Build our container
+
 ```bash
 docker build -t flappy-bird .
 ```
 
 2. Run it (container) on 5000 port:
+
 ```bash
 docker run -p 5000:5000 -t flappy-bird
 ```
