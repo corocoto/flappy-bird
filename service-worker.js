@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flappy-bird/precache-manifest.947814523f47ddb84ea55c0a0a014bb0.js"
+  "/flappy-bird/precache-manifest.de13bd34a6089d980b168d741d5adb5f.js"
 );
 
 self.addEventListener('message', (event) => {
