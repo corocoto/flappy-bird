@@ -55,7 +55,6 @@
     "lodash": "^4.17.21",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-normalize": "8.0.1",
-    "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
     "react": "^17.0.2",
     "react-app-polyfill": "^2.0.0",
