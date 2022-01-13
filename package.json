@@ -29,7 +29,9 @@
     "deploy": "gh-pages -d build",
     "eslint-fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
     "eslint-check": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "editorconfig-check": "editorconfig-checker"
+    "editorconfig-check": "editorconfig-checker",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec \"cypress/integration/flappy-bird.spec.js\""
   },
   "browserslist": {
     "production": [
@@ -79,6 +81,7 @@
     "babel-preset-react-app": "^10.0.0",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "css-loader": "^5.2.7",
+    "cypress": "^9.2.1",
     "editorconfig-checker": "^4.0.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
