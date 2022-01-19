@@ -1,6 +1,7 @@
 # :bird: Flappy Bird
 
-[![Test CI](https://github.com/corocoto/flappy-bird/workflows/test/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/test.yml)
+[![unit tests CI](https://github.com/corocoto/flappy-bird/workflows/unit-tests/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/unit-tests.yml)
+[![e2e tests CI](https://github.com/corocoto/flappy-bird/workflows/e2e-tests/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/e2e-tests.yml)
 [![eslint-check CI](https://github.com/corocoto/flappy-bird/workflows/eslint-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/eslint.yml)
 [![editorconfig-check CI](https://github.com/corocoto/flappy-bird/workflows/editorconfig-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/editorconfig.yml)
 
