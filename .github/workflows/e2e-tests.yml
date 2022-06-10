@@ -17,5 +17,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - run: npm ci --force
       - run: npm run e2e:ci
