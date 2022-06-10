@@ -1,5 +1,5 @@
 FROM node:14-alpine
-LABEL maintainer="gusev2014russia@mail.ru"
+LABEL maintainer="corocoto.art@gmail.com"
 WORKDIR /app
 COPY package*.json ./
 COPY tsconfig.json ./
