@@ -1,6 +1,5 @@
 import React, {useEffect, useRef, useCallback} from 'react';
 import classes from './Scene.module.css';
-import _cloneDeep from 'lodash/cloneDeep';
 
 import {
   sounds,
@@ -15,7 +14,7 @@ import {
 } from './constants';
 import {CoordinatesType} from './Scene.types';
 
-const BIRD_COPY = _cloneDeep(BIRD);
+const BIRD_COPY = structuredClone(BIRD);
 
 let backgroundImage: HTMLImageElement;
 let birdImage: HTMLImageElement;

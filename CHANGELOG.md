@@ -5,6 +5,14 @@ This file describes notable changes in each version of Flappy Bird application.
 ## What's new?
 ### Changed
 * Forms changelog list;
+* Replaces [`lodash`'s `cloneDeep` function](https://lodash.com/docs/4.17.15#cloneDeep) onto native JavaScript [`structuredClone()`](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone);
+* Updates [`@types/node`](https://www.npmjs.com/package/@types/node) package from `^17.0.8` to ``^17.0.40` version;
+* Changes `Node.js` version from 16 to 17 at CI jobs;
+
+### Removed
+* Removes [`lodash`](https://www.npmjs.com/package/lodash) package from dependencies list;
+* Removes [`@types/lodash`](https://www.npmjs.com/package/@types/lodash) package from devDependencies list;
+* Removes `isTouchService` helper;
 
 ## 1.1.3 (11 April 2021)
 ### Added
