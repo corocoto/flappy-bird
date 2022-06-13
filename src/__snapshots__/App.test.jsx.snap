@@ -3,9 +3,11 @@
 exports[`<App /> should renders correctly 1`] = `
 <div
   className="App"
+  data-testid="App"
 >
   <div
     className="Poster"
+    data-testid="Poster"
   >
     <img
       alt="Logo"
@@ -15,8 +17,10 @@ exports[`<App /> should renders correctly 1`] = `
   </div>
   <div
     className="Menu"
+    data-testid="Menu"
   >
     <button
+      data-testid="Menu__BackButton"
       hidden={true}
       onClick={[Function]}
     >
@@ -49,6 +53,7 @@ exports[`<App /> should renders correctly 1`] = `
     >
       <a
         className="License"
+        data-testid="Menu__LicenseLink"
         href="https://github.com/corocoto/flappy-bird/blob/master/LICENSE"
         rel="noopener noreferrer license"
         target="_blank"
@@ -58,6 +63,7 @@ exports[`<App /> should renders correctly 1`] = `
       </a>
       <a
         className="Repo"
+        data-testid="Menu__RepoLink"
         href="https://github.com/corocoto/flappy-bird"
         rel="noopener noreferrer bookmark"
         target="_blank"
