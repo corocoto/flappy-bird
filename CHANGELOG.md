@@ -5,6 +5,17 @@ This file describes notable changes in each version of Flappy Bird application.
 ## What's new?
 ### Changed
 * Forms changelog list;
+* Replace tests that used `enzyme`-like packages onto react testing library usage;
+* Changes [`eslint-webpack-plugin`](https://webpack.js.org/plugins/eslint-webpack-plugin/) package version (from `^3.1.1` to `^2.6.0`). It needs to prevent conflicts between packages on installation step.
+* Changes using version of `actions/checkout` (from v2 to v3);
+* Changes using version of `actions/setup-node` (from v1 to v3). 
+
+### Removed
+* Removes [`enzyme`](https://enzymejs.github.io/enzyme/) package;
+* Removes [`enzyme-adapter-react-16`](https://www.npmjs.com/package/enzyme-adapter-react-16) package.
+
+### Security
+* Fixes vulnerability issue.
 
 ## 1.1.3 (11 April 2021)
 ### Added

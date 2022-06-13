@@ -3,6 +3,7 @@
 exports[`<Poster /> should renders correctly 1`] = `
 <div
   className="Poster"
+  data-testid="Poster"
 >
   <img
     alt="Logo"
