@@ -1,9 +1,18 @@
+// Libs
 import React, {Suspense} from 'react';
-import classes from './Menu.module.css';
-import {Route, Switch} from 'react-router-dom';
-import {withRouter} from 'react-router-dom';
+import {Route, Switch, withRouter} from 'react-router-dom';
+
+// Styles
+import styles from './Menu.module.css';
+
+// Components
 import List from './List';
-import {MenuType} from './Menu.types';
+
+// Type definitions
+import { MenuType } from './Menu.types';
+
+// Constants
+import testAttributes from "../../testAttributes";
 
 const Scene = React.lazy(() =>
   import(
@@ -35,28 +44,31 @@ const Menu: MenuType = ({history}) => {
   const fallbackNode = <p>Loading...</p>;
 
   return (
-    <div className={classes.Menu}>
+    <div className={styles.Menu} data-testid={testAttributes.MENU_COMPONENT}>
       <button
         onClick={handleBackButtonClick}
         hidden={isBackButtonHidden}
+        data-testid={testAttributes.BACK_BUTTON}
       >
         Back
       </button>
       <Suspense fallback={fallbackNode}>{routes}</Suspense>
-      <div className={classes.Links}>
+      <div className={styles.Links}>
         <a
           href='https://github.com/corocoto/flappy-bird/blob/master/LICENSE'
           target='_blank'
-          className={classes.License}
+          className={styles.License}
           rel='noopener noreferrer license'
           title='Link on the licence'
+          data-testid={testAttributes.LICENSE_LINK}
         > </a>
         <a
           href='https://github.com/corocoto/flappy-bird'
           target='_blank'
-          className={classes.Repo}
+          className={styles.Repo}
           rel='noopener noreferrer bookmark'
           title='Link on the repository'
+          data-testid={testAttributes.REPO_LINK}
         > </a>
       </div>
     </div>
