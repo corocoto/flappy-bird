@@ -1,0 +1,41 @@
+name: tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  e2e-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+    steps:
+      - uses: |
+        actions/checkout@v3
+        actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: |
+        npm ci
+        npm run e2e:ci
+        echo "This job's status is ${{ job.status }}."
+
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+    steps:
+      - uses: |
+        actions/checkout@v3
+        actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: |
+        npm ci
+        npm run test:ci
+        echo "This job's status is ${{ job.status }}."
