@@ -14,15 +14,13 @@ jobs:
       matrix:
         node-version: [ 16.x ]
     steps:
-      - uses: |
-        actions/checkout@v3
-        actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-        npm ci
-        npm run e2e:ci
-        echo "This job's status is ${{ job.status }}."
+      - run: npm ci
+      - run: npm run e2e:ci
+      - run: echo "This job's status is ${{ job.status }}."
 
   lint:
     runs-on: ubuntu-latest
@@ -30,12 +28,10 @@ jobs:
       matrix:
         node-version: [ 16.x ]
     steps:
-      - uses: |
-        actions/checkout@v3
-        actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-        npm ci
-        npm run test:ci
-        echo "This job's status is ${{ job.status }}."
+      - run: npm ci
+      - run: npm run test:ci
+      - run: echo "This job's status is ${{ job.status }}."
