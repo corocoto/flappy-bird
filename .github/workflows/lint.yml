@@ -14,15 +14,13 @@ jobs:
       matrix:
         node-version: [ 16.x ]
     steps:
-      - uses: |
-        actions/checkout@v3
-        actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-          npm ci
-          npm run editorconfig-check
-          echo "This job's status is ${{ job.status }}."
+      - run: npm ci
+      - run: npm run editorconfig-check
+      - run: echo "This job's status is ${{ job.status }}."
 
   eslint-checker:
     runs-on: ubuntu-latest
@@ -30,12 +28,10 @@ jobs:
       matrix:
         node-version: [ 16.x ]
     steps:
-      - uses: |
-        actions/checkout@v3
-        actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-        npm ci
-        npm run eslint-check
-        echo "This job's status is ${{ job.status }}."
+      - run: npm ci
+      - run: npm run eslint-check
+      - run: echo "This job's status is ${{ job.status }}."
