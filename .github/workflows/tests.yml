@@ -24,7 +24,7 @@ jobs:
         run: npm ci
       - name: Run e2e tests
         run: npm run e2e:ci
-      - run: This job's status is ${{ job.status }}."
+      - run: echo "This job's status is ${{ job.status }}."
 
   unit-tests:
     runs-on: ubuntu-latest
