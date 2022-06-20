@@ -24,7 +24,7 @@ jobs:
         run: npm ci
       - name: Run editorconfig checker
         run: npm run editorconfig-check
-      - name: This job's status is ${{ job.status }}.
+      - run: echo "This job's status is ${{ job.status }}."
 
   eslint-checker:
     runs-on: ubuntu-latest
@@ -42,4 +42,4 @@ jobs:
         run: npm ci
       - name: Run eslint checker
         run: npm run eslint-check
-      - name: This job's status is ${{ job.status }}.
+      - run: echo "This job's status is ${{ job.status }}."
