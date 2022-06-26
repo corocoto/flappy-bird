@@ -1,9 +1,8 @@
 # :bird: Flappy Bird
 
-[![unit tests CI](https://github.com/corocoto/flappy-bird/workflows/unit-tests/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/unit-tests.yml)
-[![e2e tests CI](https://github.com/corocoto/flappy-bird/workflows/e2e-tests/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/e2e-tests.yml)
-[![eslint-check CI](https://github.com/corocoto/flappy-bird/workflows/eslint-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/eslint.yml)
-[![editorconfig-check CI](https://github.com/corocoto/flappy-bird/workflows/editorconfig-check/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/editorconfig.yml)
+[![tests](https://github.com/corocoto/flappy-bird/workflows/tests/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/tests.yml)
+[![lint](https://github.com/corocoto/flappy-bird/workflows/lint/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/lint.yml)
+[![deploy](https://github.com/corocoto/flappy-bird/workflows/deploy/badge.svg)](https://github.com/corocoto/flappy-bird/actions/workflows/deploy.yml)
 
 ## Introduction
 
