@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a8d68efea5d460a1579d8cdec4bf790",
+    "revision": "88e20bcd51952f3127a54cc2378baa70",
     "url": "/flappy-bird/index.html"
   },
   {
@@ -8,11 +8,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flappy-bird/static/css/AboutComponent.5953bbe5.chunk.css"
   },
   {
-    "revision": "04364a6b508405fd3cf0",
+    "revision": "123ea24f99d01c3a534a",
     "url": "/flappy-bird/static/css/SceneComponent.7f3c91f1.chunk.css"
   },
   {
-    "revision": "3fecd046b07987473cab",
+    "revision": "091493756c2ff75bec1b",
     "url": "/flappy-bird/static/css/main.54ef0b9a.chunk.css"
   },
   {
@@ -20,28 +20,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flappy-bird/static/js/4.8b2b1b1a.chunk.js"
   },
   {
-    "revision": "8cf1e0c6ae3aedfe574d",
-    "url": "/flappy-bird/static/js/5.ea802c13.chunk.js"
+    "revision": "15d7a5476658a8e2b804",
+    "url": "/flappy-bird/static/js/5.2cfd8fe9.chunk.js"
   },
   {
     "revision": "c9c5f12326e730f6171c9e7086115877",
-    "url": "/flappy-bird/static/js/5.ea802c13.chunk.js.LICENSE.txt"
+    "url": "/flappy-bird/static/js/5.2cfd8fe9.chunk.js.LICENSE.txt"
   },
   {
     "revision": "23c4341240a65c12b506",
     "url": "/flappy-bird/static/js/AboutComponent.7d7a5f05.chunk.js"
   },
   {
-    "revision": "04364a6b508405fd3cf0",
-    "url": "/flappy-bird/static/js/SceneComponent.23360bb1.chunk.js"
+    "revision": "123ea24f99d01c3a534a",
+    "url": "/flappy-bird/static/js/SceneComponent.33139ad8.chunk.js"
   },
   {
-    "revision": "3fecd046b07987473cab",
-    "url": "/flappy-bird/static/js/main.da4da57c.chunk.js"
+    "revision": "091493756c2ff75bec1b",
+    "url": "/flappy-bird/static/js/main.62252b27.chunk.js"
   },
   {
-    "revision": "7520b655409eaaeb3624",
-    "url": "/flappy-bird/static/js/runtime-main.8f0f44d6.js"
+    "revision": "d548735520fd6d8d3c70",
+    "url": "/flappy-bird/static/js/runtime-main.7e7dd7c1.js"
   },
   {
     "revision": "f97dc14b469e7aba06579207a33b1946",
