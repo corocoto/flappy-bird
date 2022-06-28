@@ -5,7 +5,8 @@ This file describes notable changes in each version of Flappy Bird application.
 ## What's new?
 ### Added
 * _CI/CD_: Adds opportunity to cache installation step;
-* Adds CD to [`gh-pages`](https://pages.github.com/) service.
+* Adds CD to [`gh-pages`](https://pages.github.com/) service;
+* Adds opportunity to run deploy workflow only on release publishing process.
 
 ### Changed
 * _CI/CD_: Move jobs with same context (such as linting process, various type of tests, etc.) to one workflow
