@@ -3,7 +3,12 @@
 This file describes notable changes in each version of Flappy Bird application.
 
 ## What's new?
+### Added
+* _CI/CD_: Adds opportunity to cache installation step;
+* Adds CD to [`gh-pages`](https://pages.github.com/) service.
+
 ### Changed
+* _CI/CD_: Move jobs with same context (such as linting process, various type of tests, etc.) to one workflow
 * Forms changelog list;
 * Replace tests that used `enzyme`-like packages onto react testing library usage;
 * Changes [`eslint-webpack-plugin`](https://webpack.js.org/plugins/eslint-webpack-plugin/) package version (from `^3.1.1` to `^2.6.0`). It needs to prevent conflicts between packages on installation step.
