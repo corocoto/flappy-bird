@@ -3,6 +3,8 @@
 This file describes notable changes in each version of Flappy Bird application.
 
 ## What's new?
+
+## 1.1.4 (28 June 2022)
 ### Added
 * _CI/CD_: Adds opportunity to cache installation step;
 * Adds CD to [`gh-pages`](https://pages.github.com/) service;
@@ -23,7 +25,7 @@ This file describes notable changes in each version of Flappy Bird application.
 ### Security
 * Fixes vulnerability issue.
 
-## 1.1.3 (11 April 2021)
+## 1.1.3 (11 April 2022)
 ### Added
 * Adds opportunity to run project in Docker;
 * Adds [`.eslintignore`](https://github.com/corocoto/flappy-bird/blob/bb6e7d214eaee3bb90c88c3aa5ed0bb229e336fa/.eslintignore) file;
