@@ -3,6 +3,28 @@
 This file describes notable changes in each version of Flappy Bird application.
 
 ## What's new?
+### Changed
+* Updates [`@babel/core`](https://www.npmjs.com/package/@babel/core) package from v7.17.9 to v7.18.6;
+* Updates [`@testing-library/react`](https://www.npmjs.com/package/@testing-library/react) package from v13.0.1 to v13.3.0;
+* Updates [`@testing-library/user-event`](https://www.npmjs.com/package/@testing-library/react) package from v14.1.0 to v14.2.1;
+* Updates [`@types/lodash`](https://www.npmjs.com/package/@types/lodash) package from v4.14.181 to v4.14.182;
+* Updates [`@types/node`](https://www.npmjs.com/package/@types/node) package from v17.0.23 to v18.0.3;
+* Updates [`@types/react`](https://www.npmjs.com/package/@types/react) package from v18.0.1 to v18.0.15;
+* Updates [`@types/react-dom`](https://www.npmjs.com/package/@types/react-dom) package from v18.0.0 to v18.0.6;
+* Updates [`babel-loader`](https://www.npmjs.com/package/babel-loader) package from v8.2.4 to v8.2.5;
+* Updates [`dotenv`](https://www.npmjs.com/package/dotenv) package from v16.0.0 to v16.0.1;
+* Updates [`eslint-plugin-jsx-a11y`](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) package from v6.5.1 to v6.6.0;
+* Updates [`eslint-plugin-react`](https://www.npmjs.com/package/eslint-plugin-react) package from v7.29.4 to v7.30.1;
+* Updates [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) package from v4.4.0 to v4.6.0;
+* Updates [`eslint-webpack-plugin`](https://www.npmjs.com/package/eslint-webpack-plugin) package from v2.6.0 to v2.7.0;
+* Updates [`fs-extra`](https://www.npmjs.com/package/fs-extra) package from v10.0.1 to v10.1.0;
+* Updates [`gh-pages`](https://www.npmjs.com/package/gh-pages) package from v3.2.3 to v4.0.0;
+* Updates [`react`](https://www.npmjs.com/package/react) package from v18.0.0 to v18.2.0;
+* Updates [`react-dom`](https://www.npmjs.com/package/react-dom) package from v18.0.0 to v18.2.0;
+* Updates [`react-test-renderer`](https://www.npmjs.com/package/react-test-renderer) package from v18.0.0 to v18.2.0;
+* Updates [`resolve`](https://www.npmjs.com/package/resolve) package from v1.22.0 to v1.22.1;
+* Updates [`typescript`](https://www.npmjs.com/package/typescript) package from v4.6.3 to v4.7.4;
+* Updates [`react-router-dom`](https://www.npmjs.com/package/react-router-dom) package from v5.3.0 to v5.3.3;
 
 ## 1.1.4 (28 June 2022)
 ### Added
