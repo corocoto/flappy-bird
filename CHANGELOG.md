@@ -24,6 +24,7 @@ This file describes notable changes in each version of Flappy Bird application.
 * Updates [`react-test-renderer`](https://www.npmjs.com/package/react-test-renderer) package from v18.0.0 to v18.2.0;
 * Updates [`resolve`](https://www.npmjs.com/package/resolve) package from v1.22.0 to v1.22.1;
 * Updates [`typescript`](https://www.npmjs.com/package/typescript) package from v4.6.3 to v4.7.4;
+* Updates [`react-router-dom`](https://www.npmjs.com/package/react-router-dom) package from v5.3.0 to v5.3.3;
 
 ## 1.1.4 (28 June 2022)
 ### Added
