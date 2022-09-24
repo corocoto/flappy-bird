@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Flappy Bird is PWA application, that was be wrote with using React.js library.
+Flappy Bird is a PWA application, that has been written with using React.js library.
 
 ![Application](https://user-images.githubusercontent.com/37180024/82160962-99759d00-98a1-11ea-865d-1ef0c5f27144.gif)
 
@@ -14,11 +14,11 @@ Flappy Bird is PWA application, that was be wrote with using React.js library.
 
 ## Instructions :clipboard:
 
-1. Download application and unpack it;
+1. Download the application and unpack it;
 2. Move into unpack folder;
 3. Run `terminal` inside this folder;
-4. Run `npm ci` or `yarn ci` for install dependencies;
-5. After that, run `npm run start` or `yarn start`  for running the project.
+4. Run `npm ci` or `yarn install` for install dependencies;
+5. After that, run `npm run start` or `yarn start`  for running a project.
 
 ## Available commands:
 
@@ -27,15 +27,15 @@ Flappy Bird is PWA application, that was be wrote with using React.js library.
 
 ## Docker
 
-For run project on Docker you're need follow next steps:
+For run this project on Docker, you need to follow next steps:
 
-1. Build our container
+1. Build an image:
 
 ```bash
 docker build -t flappy-bird .
 ```
 
-2. Run it (container) on 5000 port:
+2. Run it on a new container (on 5000 port):
 
 ```bash
 docker run -p 5000:5000 -t flappy-bird
