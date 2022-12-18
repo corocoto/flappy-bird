@@ -44,7 +44,7 @@
     ]
   },
   "dependencies": {
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^6.5.1",
     "camelcase": "^6.2.0",
     "dotenv": "^16.0.0",
     "dotenv-expand": "^8.0.3",
@@ -97,7 +97,7 @@
     "jest-resolve": "^27.1.0",
     "jest-watch-typeahead": "^0.6.4",
     "mini-css-extract-plugin": "^1.6.2",
-    "optimize-css-assets-webpack-plugin": "^5.0.8",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "pnp-webpack-plugin": "^1.7.0",
     "postcss-loader": "3.0.0",
     "react-test-renderer": "^18.2.0",
